@@ -1,0 +1,5 @@
+com/example/formation_ddd_zenika/ports/AvisService.class
+com/example/formation_ddd_zenika/FormationDddZenikaApplication.class
+com/example/formation_ddd_zenika/domains/models/Avis.class
+com/example/formation_ddd_zenika/domains/models/Signalement.class
+com/example/formation_ddd_zenika/domains/models/RaisonSignalement.class

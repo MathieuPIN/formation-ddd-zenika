@@ -1,0 +1,5 @@
+/home/mpineau/Documents/Formations/DDD/formation-ddd-zenika/src/main/java/com/example/formation_ddd_zenika/FormationDddZenikaApplication.java
+/home/mpineau/Documents/Formations/DDD/formation-ddd-zenika/src/main/java/com/example/formation_ddd_zenika/domains/models/Avis.java
+/home/mpineau/Documents/Formations/DDD/formation-ddd-zenika/src/main/java/com/example/formation_ddd_zenika/domains/models/RaisonSignalement.java
+/home/mpineau/Documents/Formations/DDD/formation-ddd-zenika/src/main/java/com/example/formation_ddd_zenika/domains/models/Signalement.java
+/home/mpineau/Documents/Formations/DDD/formation-ddd-zenika/src/main/java/com/example/formation_ddd_zenika/ports/AvisService.java
