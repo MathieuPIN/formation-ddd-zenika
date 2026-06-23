@@ -8,47 +8,50 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Getter
-@Setter
 public class Avis {
 
     private Integer id;
 
-    @NonNull
+    @NotNull
     private String utilisateur;
+
+    @NotNull
+    private StatutAvis statutAvis;
 
     private double note;
 
-    @NonNull
+    @NotNull
     private String texte;
 
     private LocalDateTime dateCreation;
 
-    @NonNull
+    @NotNull
     private Boolean captcha;
 
-    @NonNull
+    @NotNull
     private List<String> tags;
+
+    @NotNull
+    private boolean caché;
 
     private Avis() {}
 
     public static Avis build(@NotNull String utilisateur, double note, @NotNull String texte, @NotNull Boolean captcha) {
         Avis avis = new Avis();
-        avis.setUtilisateur(utilisateur);
-        avis.setNote(note);
-        avis.setTexte(texte);
-        avis.setCaptcha(captcha);
-        avis.setDateCreation(LocalDateTime.of(2026, 6, 23, 10, 57));
-        avis.setTags(new ArrayList<>());
+
+        avis.utilisateur = utilisateur;
+        avis.note = note;
+        avis.texte = texte;
+        avis.captcha = captcha;
+        avis.dateCreation = LocalDateTime.now();
+        avis.tags = new ArrayList<>();
+        avis.caché = false;
+        avis.statutAvis = StatutAvis.VALID;
 
         return avis;
     }
 
-    public void publier() {
-        if(!captcha) {
-            tags.add("robot");
-        }
-        dateCreation = LocalDateTime.of(2026, 6, 23, 10, 57);
-        id = 1;
+    public void cacherAvis() {
+        this.caché = true;
     }
-
 }
