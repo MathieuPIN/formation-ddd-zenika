@@ -1,4 +1,4 @@
-package com.example.formation_ddd_zenika.shared.annotations;
+package com.example.formation_ddd_zenika.application.shared.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -7,5 +7,5 @@ import java.lang.annotation.Target;
 
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-public @interface Repository {
+public @interface DomainService {
 }

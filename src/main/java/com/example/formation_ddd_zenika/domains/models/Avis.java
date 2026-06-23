@@ -26,17 +26,17 @@ public class Avis {
     private LocalDateTime dateCreation;
 
     @NotNull
-    private Boolean captcha;
+    private boolean captcha;
 
     @NotNull
-    private List<String> tags;
+    private boolean tag;
 
     @NotNull
     private boolean caché;
 
     private Avis() {}
 
-    public static Avis build(@NotNull String utilisateur, double note, @NotNull String texte, @NotNull Boolean captcha) {
+    public static Avis build(@NotNull String utilisateur, double note, @NotNull String texte, boolean captcha) {
         Avis avis = new Avis();
 
         avis.utilisateur = utilisateur;
@@ -44,7 +44,7 @@ public class Avis {
         avis.texte = texte;
         avis.captcha = captcha;
         avis.dateCreation = LocalDateTime.now();
-        avis.tags = new ArrayList<>();
+        avis.tag = false;
         avis.caché = false;
         avis.statutAvis = StatutAvis.VALID;
 

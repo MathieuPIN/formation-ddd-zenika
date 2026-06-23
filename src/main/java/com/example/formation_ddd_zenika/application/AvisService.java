@@ -1,8 +1,8 @@
 package com.example.formation_ddd_zenika.application;
 
 import com.example.formation_ddd_zenika.domains.models.Avis;
-import com.example.formation_ddd_zenika.ports.AvisRepository;
-import com.example.formation_ddd_zenika.shared.annotations.ApplicationService;
+import com.example.formation_ddd_zenika.domains.ports.AvisRepository;
+import com.example.formation_ddd_zenika.application.shared.annotations.ApplicationService;
 
 @ApplicationService
 public class AvisService {

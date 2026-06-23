@@ -1,7 +1,7 @@
-package com.example.formation_ddd_zenika.ports;
+package com.example.formation_ddd_zenika.domains.ports;
 
 import com.example.formation_ddd_zenika.domains.models.Signalement;
-import com.example.formation_ddd_zenika.shared.annotations.Repository;
+import com.example.formation_ddd_zenika.application.shared.annotations.Repository;
 
 @Repository
 public interface SignalementRepository {

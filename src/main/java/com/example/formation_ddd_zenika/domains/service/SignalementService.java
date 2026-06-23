@@ -3,8 +3,8 @@ package com.example.formation_ddd_zenika.domains.service;
 import com.example.formation_ddd_zenika.domains.models.Avis;
 import com.example.formation_ddd_zenika.domains.models.RaisonSignalement;
 import com.example.formation_ddd_zenika.domains.models.Signalement;
-import com.example.formation_ddd_zenika.ports.SignalementRepository;
-import com.example.formation_ddd_zenika.shared.annotations.DomainService;
+import com.example.formation_ddd_zenika.domains.ports.SignalementRepository;
+import com.example.formation_ddd_zenika.application.shared.annotations.DomainService;
 
 import static com.example.formation_ddd_zenika.domains.models.Signalement.creerNouveau;
 

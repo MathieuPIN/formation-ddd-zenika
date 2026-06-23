@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  postgres-db:
+    image: postgres:16-alpine
+    container_name: ddd_formation_postgres
+    ports:
+      - "5432:5432" # Redirige le port 5432 du conteneur vers ta machine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: formation_ddd
+    volumes:
+      - .docker/postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data: # Permet de ne pas perdre tes données si tu arrêtes le conteneur
